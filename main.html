@@ -36,12 +36,50 @@
             <div class="main-block__info-wrap">
                 <div class="main-block__info-title">Демо-версия</div>
                 <div class="main-block__info-text">За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить </div>
-                <div class="main-block__info-button">Попробовать бесплатно</div>
+                <div class="main-block__info-button" onclick="openModal()">
+                    <div class="main-block__info-button_text">Попробовать бесплатно</div>
+                    <img class="main-block__info-button_arrow" src="images/arrow.svg" alt="arrow">
+                </div>
             </div>
         </div>
 
-        <img class="main-block__image" src="images/pc.svg" alt="">
+        <div class="main-block__image">
+            <img src="images/pc.svg" alt="pc">
+        </div>
+
     </div>
+
+    <div class="modal-overlay">
+        <div class="modal">
+
+            <div class="modal-wrap">
+    
+                <img class="modal-close" src="images/close.svg" alt="close" onclick="closeModal()">
+            
+                <div class="modal-title">Войти в систему</div>
+    
+                <div class="modal-inputs">
+                    <input class="modal-input" placeholder="Email/Телефон" type="text">
+                    <input class="modal-input" placeholder="Пароль" type="password">
+                </div>
+    
+                <input type="checkbox" class="custom-checkbox" id="save" name="save" value="yes">
+                <label class="save-label" for="save">Запомнить пароль</label>
+    
+                <div class="modal-restore">Восстановить</div>
+               
+    
+                <div class="modal-buttons">
+                    <div class="modal-button_signIn modal-button active-button">Войти</div>
+                    <div class="modal-button_registration modal-button">Зарегестрироваться</div>
+                </div>
+    
+                
+            </div>
+            
+        </div>
+    </div>
+    
     
 </body>
 
