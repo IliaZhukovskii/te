@@ -1,0 +1,53 @@
+.main-block
+    font-family: "Manrope", sans-serif
+    display: flex
+    margin: 36px 40px 
+    border-radius: 10px
+    overflow: hidden
+   
+    &__info
+        background-color: #EBF0FA
+        width: 50%
+        display: flex
+        align-items: center
+        padding-left: 72px
+
+        &-title
+            color: #1F4284
+            font-weight: 500
+            font-size: 30px
+            line-height: 48px
+            margin-bottom: 18px
+
+        &-text
+            color: #727272
+            font-weight: 400
+            font-size: 17px
+            line-height: 27px
+            max-width: 520px
+            margin-bottom: 36px
+
+        &-button
+            background-color: #244C98
+            color: #ffffff
+            font-weight: 500
+            font-size: 18px
+            line-height: 29px
+            padding: 18px 14px 18px 24px
+            border-radius: 70px
+            max-width: 320px
+            position: relative
+            cursor: pointer
+
+            &::after 
+                content: ""
+                background-image: url(/images/arrow.svg)
+                position: absolute
+                top: 10px
+                right: 10px
+                width: 44px
+                height: 44px
+       
+               
+    &__image
+        width: 50%
